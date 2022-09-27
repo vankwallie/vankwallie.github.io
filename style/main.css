@@ -36,8 +36,9 @@ p, h1, h2, h3, a {
 
  p {
     font-family: 'JetBrains Mono', sans-serif !important;
+    font-kerning: auto;
     font-style: normal;
-    font-weight: 300;
+    font-weight: normal;
     
     color: #6A6A6A;
     
@@ -113,10 +114,6 @@ a:hover {
 }
 
 
-
-
-
-
 .line {
     display: flex;
     justify-content: flex-start;
@@ -126,5 +123,49 @@ a:hover {
     border: .25px solid #393939;
 }
 
-/* media queries */
+/* images on hover */
+
+.LC2022:hover {
+    position: relative;
+}
+.LC2022:hover:after {
+    content: url(./assets/thumbnails/LC2022-thumbnail.PNG); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 123px; /* change this value to one that suits you */
+    top: 56px; /* change this value to one that suits you */
+}
+
+.AMag:hover {
+    position: relative;
+}
+.AMag:hover:after {
+    content: url(image/circle.PNG); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 123px; /* change this value to one that suits you */
+    top: 56px; /* change this value to one that suits you */
+}
+
+.Hype:hover {
+    position: relative;
+}
+.Hype:hover:after {
+    content: url(image/circle.PNG); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 123px; /* change this value to one that suits you */
+    top: 56px; /* change this value to one that suits you */
+}
+
+.Fidens:hover {
+    position: relative;
+}
+.Fidens:hover:after {
+    content: url(image/circle.PNG); /* no need for qoutes */
+    display: block;
+    position: absolute;
+    left: 123px; /* change this value to one that suits you */
+    top: 56px; /* change this value to one that suits you */
+}
 
