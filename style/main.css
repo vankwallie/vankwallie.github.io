@@ -3,16 +3,26 @@
     color: white;
   }
 
+* {
+    box-sizing: border-box;
+}
+
 html, body {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
     font-family: 'Switzer', sans-serif !important;
-    transition: background-color .5s, color .5s
+    transition: background-color .5s, color .5s;
+
+    padding: 1rem;
+    margin: 1rem;
 }
 
 p, h1, h2, h3, a {
-    font-family: 'Switzer', sans-serif !important;
+    font-family: 'Jetbrains Mono', sans-serif !important;
  }
 
  h1 {
+    font-family: "Switzer", sans-serif !important;
     font-style: normal;
     font-weight:600;
     background-color: color;
@@ -22,7 +32,7 @@ p, h1, h2, h3, a {
 
  h2 {
     font-style: normal;
-    font-weight: 500;
+    font-weight: 600;
   
     color: #989898;
  }
@@ -46,8 +56,8 @@ p, h1, h2, h3, a {
 
  .lock-up {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    justify-content: flex-end;
+    
  }
 
  .logo-btn {
@@ -64,17 +74,12 @@ p, h1, h2, h3, a {
 
 }
 
- .caption  {
-    font-weight: 400;
-    color: #242424;
- }
-
 a {
     
     font-style: italic;
     font-weight: 300;
     text-decoration: none;
-    color: #FF1998;
+    color: #393939;
     font-style: normal;
 
 }
@@ -89,10 +94,7 @@ a:hover {
 
 
 
-.content {
-    padding: 1rem;
-    margin: 1rem;
-}
+
 
 .social-links, .portfolio-links, .contact-links {
     padding-right: 2.4rem;
@@ -108,11 +110,18 @@ a:hover {
 @media (max-width: 500px) {
     .links {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         flex-direction: column;    
     }
 }
 
+@media (max-width: 500px) {
+    .case-studies {
+        display: flex !important;
+        justify-content: flex-start !important;
+        flex-direction: column !important;
+    }
+}
 
 .line {
     display: flex;
@@ -121,51 +130,55 @@ a:hover {
     align-items: left;
     text-align: left;
     border: .25px solid #393939;
+    
 }
 
-/* images on hover */
+/* Case Studies part */
 
-.LC2022:hover {
-    position: relative;
-}
-.LC2022:hover:after {
-    content: url(./assets/thumbnails/LC2022-thumbnail.PNG); /* no need for qoutes */
-    display: block;
-    position: absolute;
-    left: 123px; /* change this value to one that suits you */
-    top: 56px; /* change this value to one that suits you */
+.case-studies {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
 }
 
-.AMag:hover {
-    position: relative;
-}
-.AMag:hover:after {
-    content: url(image/circle.PNG); /* no need for qoutes */
-    display: block;
-    position: absolute;
-    left: 123px; /* change this value to one that suits you */
-    top: 56px; /* change this value to one that suits you */
+.case-study-item {
 }
 
-.Hype:hover {
-    position: relative;
-}
-.Hype:hover:after {
-    content: url(image/circle.PNG); /* no need for qoutes */
-    display: block;
-    position: absolute;
-    left: 123px; /* change this value to one that suits you */
-    top: 56px; /* change this value to one that suits you */
+.case-study-thumbnail {
+    width: 300px;
+    height: auto;
 }
 
-.Fidens:hover {
-    position: relative;
-}
-.Fidens:hover:after {
-    content: url(image/circle.PNG); /* no need for qoutes */
-    display: block;
-    position: absolute;
-    left: 123px; /* change this value to one that suits you */
-    top: 56px; /* change this value to one that suits you */
+.case-study-title {
+    font-weight: bold;
+    color: #989898;
+    font-size: 1.25rem;
 }
 
+.cs-short-bio {
+    font-size: .75rem;
+    color: #242424;
+}
+/* recent logo part */
+
+.recent-logos-resp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.recent-logos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.recent-logo-item {
+      padding: 1rem;
+    
+}
+
+.logo-thumbnail {
+    width: 600px;
+    height: auto;
+}
