@@ -73,13 +73,16 @@ a {
     font-weight: 300;
     text-decoration: none;
     color: #FF1998;
+    font-style: normal;
+
 }
 
-a:hover, a:visited {
+a:hover {
     font-style: italic;
     font-weight: 300;
     color: #E700FF;
     text-decoration: none;
+    font-style: normal;
 }
 
 
