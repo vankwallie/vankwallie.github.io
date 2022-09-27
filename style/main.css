@@ -35,6 +35,7 @@ p, h1, h2, h3, a {
  }
 
  p {
+    font-family: 'JetBrains Mono', sans-serif !important;
     font-style: normal;
     font-weight: 300;
     
